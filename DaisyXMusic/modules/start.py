@@ -21,19 +21,19 @@ def _start(client, message):
             [
                 [
                     InlineKeyboardButton(
-                        "➕ Add me to your Group 🙋‍♀️",
+                        "➕ Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "📲 Updates", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "📣 Oᴡɴᴇʀ Cʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                     InlineKeyboardButton(
-                        "💬 Support", url=f"https://t.me/{SUPPORT_GROUP}"
+                        "👥 Oғғɪᴄɪᴀʟ Gʀᴏᴜᴘ", url=f"https://t.me/{SUPPORT_GROUP}"
                     ),
                 ],
-                [InlineKeyboardButton("🛠 Source Code 🛠", url=f"https://{SOURCE_CODE}")],
+                [InlineKeyboardButton("⚙️ Dᴇᴠᴇʟᴏᴘᴇʀ ⚙️", url=f"https://t.me/jason_spqr_roman_Kr")],
             ]
         ),
         reply_to_message_id=message.message_id,
@@ -43,7 +43,7 @@ def _start(client, message):
 @Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
     await message.reply_text(
-        f"""**🔴 {PROJECT_NAME} is online**""",
+        f"""**🔴 KNR Music Bot Project is online**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -95,21 +95,21 @@ def map(pos):
         button = [
             [
                 InlineKeyboardButton(
-                    "➕ Add me to your Group 🙋‍♀️",
+                    "➕ Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕",
                     url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                 )
             ],
             [
                 InlineKeyboardButton(
-                    text="📲 Updates", url=f"https://t.me/{UPDATES_CHANNEL}"
+                    text="📣 Oᴡɴᴇʀ Cʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"
                 ),
                 InlineKeyboardButton(
-                    text="💬 Support", url=f"https://t.me/{SUPPORT_GROUP}"
+                    text="👥 Oғғɪᴄɪᴀʟ Gʀᴏᴜᴘ", url=f"https://t.me/{SUPPORT_GROUP}"
                 ),
             ],
             [
                 InlineKeyboardButton(
-                    text="🛠 Source Code 🛠", url=f"https://{SOURCE_CODE}"
+                    text="⚙️ Dᴇᴠᴇʟᴏᴘᴇʀ ⚙️ 🛠", url="https://t.me/jason_spqr_roman_Kr"
                 )
             ],
             [InlineKeyboardButton(text="◀️", callback_data=f"help+{pos-1}")],
